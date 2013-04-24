@@ -1,7 +1,7 @@
 <!doctype html>  
   <html>  
   <head>  
-    <title>Kiosk</title>  
+    <title>Sirius Kiosk</title>  
     <style type="text/css">
        html, body {
           overflow: hidden;
@@ -16,20 +16,15 @@
     <script type="text/javascript" src="countdown/jquery.countdown.js"></script>
     <script>
       function load() {  
-        var urls = ['http://www.buckeyetraffic.org/?region=SouthWest',
-                    'http://cmhimg01.dot.state.oh.us/images/artimis/CCTV003a-L.jpg',
-                    'http://newsmap.jp',
+        var urls = [
+                    'http://ohgo.com/dashboard/cincinnati',
+                    'highway.html',
                     'http://www.accuweather.com/en/us/cincinnati-oh/45246/hourly-weather-forecast/19409_pc',
                     'http://www.wunderground.com/cgi-bin/findweather/getForecast?brand=wxmap&query=39.23778,-84.47250&lat=39.23778&lon=-84.47250&zoom=9&type=map&units=english&wxsn=0&rad=1&rad.num=6&rad.spd=25&rad.opa=70&rad.stm=0&rad.type=N0R&rad.type2=&rad.smo=1&rad.mrg=0&sat=0&cams=0&svr=0&tor=1&tor.show=now&ib=0',
-                    'http://www.wunderground.com/severe.asp?region=mw#gotoMap',
-                    'http://www.dilbert.com/strips/',
-                    'http://sports.yahoo.com/mlb/teams/cin',
-                    'http://sports.yahoo.com/nhl/teams/pit',
-                    'http://sports.yahoo.com/nhl/teams/col',
-                    'http://www.historynet.com/today-in-history'
+                    'http://news.google.com',
+                    'http://xkcd.com/',
                    ];
-//                    'https://www.youtube.com/v/HhUEs8uIkNs&hd=1&autoplay=1'
-        var delaySec = [ 15, 10, 30, 10, 30, 10, 20, 10, 5, 5, 10 ];
+        var delaySec = [ 30, 10, 20, 20, 30, 20 ];
         var pos = 0;
         var lastID = -1;
 
@@ -57,7 +52,7 @@
           // increment position
           pos++;
         }
-      }  
+      }
       window.onload = load;  
     </script>  
   </head>  
@@ -66,12 +61,3 @@
     <iframe id="rotate" frameborder=0 border=0 width="100%" height="100%"></iframe>
   </body>  
 </html>  
-
-
-
-
-
-
-
-
-
